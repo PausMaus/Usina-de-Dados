@@ -1,0 +1,30 @@
+# Usina Terra Dados V.0.8
+
+## Descrição
+Este programa é uma ferramenta de extração de dados do YouTube. Ele permite extrair informações de vídeos individuais, canais e playlists. Além disso, ele fornece funcionalidades para importar e exportar dados para o Excel.
+
+## Requisitos
+- Python 3.7+
+- Bibliotecas: googleapiclient, pandas, glob, sys, datetime
+
+## Configuração
+Antes de executar o programa, certifique-se de ter uma chave de API válida do YouTube. Você pode obter uma no Google Cloud Console. Depois de obter a chave, substitua o valor da variável `api_key` no código pelo valor da sua chave.
+
+## Uso
+Para iniciar o programa, execute o script Python no terminal. O programa irá apresentar um menu com várias opções. Aqui está o que cada opção faz:
+
+1. **Extrator de Vídeo Único**: Esta opção permite que você extraia informações de um único vídeo. Você precisará fornecer o ID do vídeo.
+2. **Extrator de Canal**: Esta opção permite que você extraia informações de todos os vídeos de um canal. Você precisará fornecer o ID do canal.
+3. **Extrator de Playlists**: Esta opção permite que você extraia informações de todos os vídeos de uma playlist. Você precisará fornecer o ID da playlist.
+5. **Importador de Excel**: Esta opção permite que você importe dados de um arquivo Excel.
+6. **Formatador de Dataframe**: Esta opção permite que você formate os dados extraídos em um dataframe do pandas.
+7. **Exportador para Excel**: Esta opção permite que você exporte os dados extraídos para um arquivo Excel.
+8. **Conferidor de Armazenagem**: Esta opção permite que você verifique os dados armazenados.
+9. **Teste de Logística de Dados**: Esta opção permite que você execute um teste de logística de dados.[EM BREVE]
+0. **Sair**: Esta opção encerra o programa.
+
+## Contribuição
+Contribuições são bem-vindas! Por favor, sinta-se à vontade para abrir uma issue.
+
+## Licença
+Este projeto está licenciado sob a licença MIT.
