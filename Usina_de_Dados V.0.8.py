@@ -4,10 +4,7 @@ from datetime import datetime
 import pandas as pd
 import time
 import sys
-#from tkinter import *
-#from tkinter import ttk
 import glob
-from funcao import *
 import os
 
 
