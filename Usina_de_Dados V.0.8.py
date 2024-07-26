@@ -451,7 +451,7 @@ def Exportador_Excel():
     if confirmacao.lower() == 's':
         timestamp = datetime.now().strftime('%Y-%m-%d_%H%M%S')
         # Define o caminho e o nome do arquivo com a data e hora
-        file_name = f'USINA TERRA DADOS V.0.8_{timestamp}.xlsx'
+        file_name = f'USINA DE DADOS V.0.8_{timestamp}.xlsx'
         file_path = os.path.join(saida_arquivos,file_name)    
         # Exporta para um arquivo Excel com o nome contendo a data e horas
         videos_df = Dataframer()
