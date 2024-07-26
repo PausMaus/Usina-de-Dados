@@ -64,7 +64,7 @@ class AI:
         sys.exit()
 
 
-M_HUB = '[USINA TERRA DADOS V.0.6]'
+M_HUB = '[USINA DE DADOS V.0.8]'
 M_EX_VU = '[EXTRATORA DE VIDEO UNICO]'
 M_EX_CA = '[EXTRATORA DE CANAL]'
 M_EX_PL = '[EXTRATORA DE PLAYLISTS]'
@@ -80,9 +80,9 @@ AI_OP = AI(nome="AURELIA",sobrenome="AGRIPPINA",maquina=M_HUB)
 ##############################################################
 
 #ARQUIVOS
-arquivo01 = rf'E:\Terra Dados\Depósito\TXT - Arquivo\videoId.txt'
-entrada_arquivos = rf"E:\Terra Dados\Depósito\HUB Terra Dados\0.Entrada"
-saida_arquivos = rf"E:\Terra Dados\Depósito\HUB Terra Dados\1.Saída"
+arquivo01 = rf'ARQUIVO'
+entrada_arquivos = rf"PASTA"
+saida_arquivos = rf"PASTA"
 
 
 
@@ -108,12 +108,6 @@ youtube = build('youtube', 'v3', developerKey=api_key)
 #SUPORTE
 
 
-
-def funcao3():
-    print("Você escolheu a Função 3!")
-
-def teste_logistica_01():
-    A_I()
 
 
 
