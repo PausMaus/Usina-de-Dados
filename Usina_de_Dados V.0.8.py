@@ -15,6 +15,11 @@ api_key = 'SUA_CHAVE_API'
 arquivo01 = rf'CAMINHO_DO_ARQUIVO'
 entrada_arquivos = rf"PASTA_DE_ENTRADA"
 saida_arquivos = rf"PASTA_DE_SAIDA"
+#ARQUIVOS
+arquivo01 = rf'ARQUIVO'
+entrada_arquivos = rf"PASTA"
+saida_arquivos = rf"PASTA"
+
 
 
 
@@ -78,11 +83,6 @@ AI_OP = AI(nome="AURELIA",sobrenome="AGRIPPINA",maquina=M_HUB)
 
 
 ##############################################################
-
-#ARQUIVOS
-arquivo01 = rf'ARQUIVO'
-entrada_arquivos = rf"PASTA"
-saida_arquivos = rf"PASTA"
 
 
 
