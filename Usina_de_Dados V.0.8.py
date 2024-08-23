@@ -4,7 +4,10 @@ from datetime import datetime
 import pandas as pd
 import time
 import sys
+#from tkinter import *
+#from tkinter import ttk
 import glob
+
 import os
 
 
@@ -12,14 +15,9 @@ import os
 #CONFIGURAÇÕES
 api_key = 'SUA_CHAVE_API'
 
-arquivo01 = rf'CAMINHO_DO_ARQUIVO'
+
 entrada_arquivos = rf"PASTA_DE_ENTRADA"
 saida_arquivos = rf"PASTA_DE_SAIDA"
-#ARQUIVOS
-arquivo01 = rf'ARQUIVO'
-entrada_arquivos = rf"PASTA"
-saida_arquivos = rf"PASTA"
-
 
 
 
@@ -69,7 +67,7 @@ class AI:
         sys.exit()
 
 
-M_HUB = '[USINA DE DADOS V.0.8]'
+M_HUB = '[USINA TERRA DADOS V.0.8.0]'
 M_EX_VU = '[EXTRATORA DE VIDEO UNICO]'
 M_EX_CA = '[EXTRATORA DE CANAL]'
 M_EX_PL = '[EXTRATORA DE PLAYLISTS]'
@@ -108,6 +106,12 @@ youtube = build('youtube', 'v3', developerKey=api_key)
 #SUPORTE
 
 
+
+def funcao3():
+    print("Você escolheu a Função 3!")
+
+def teste_logistica_01():
+    A_I()
 
 
 
@@ -178,13 +182,13 @@ def menu_teste():
 #IMPORTADORES
 def Escritor_Banco_de_Dados():
     print('Escrevendo nos Bancos de Dados Integrados...')
-    with open(arquivo01, 'w') as f:
+    with open(entrada_arquivos, 'w') as f:
         for item in videoId:
             f.write(item + '\n')
 
 def Leitor_Banco_de_Dados():
     print('Lendo Bancos de Dados Integrados...')
-    with open(arquivo01, 'r') as f:
+    with open(entrada_arquivos, 'r') as f:
         videoId = {line.strip() for line in f}
         print("Leitor de Banco de Dados diz: videoId:", videoId)  
         return videoId
@@ -451,7 +455,7 @@ def Exportador_Excel():
     if confirmacao.lower() == 's':
         timestamp = datetime.now().strftime('%Y-%m-%d_%H%M%S')
         # Define o caminho e o nome do arquivo com a data e hora
-        file_name = f'USINA DE DADOS V.0.8_{timestamp}.xlsx'
+        file_name = f'USINA TERRA DADOS V.0.8_{timestamp}.xlsx'
         file_path = os.path.join(saida_arquivos,file_name)    
         # Exporta para um arquivo Excel com o nome contendo a data e horas
         videos_df = Dataframer()
